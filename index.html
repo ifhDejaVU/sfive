@@ -1,34 +1,26 @@
 <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>五</title>
-    <script type="text/javascript">
-        // 根据不同的终端，跳转到不同的地址
-        var theUrl ;
-       
-        var Num =  parseInt(3*Math.random()) 
-        switch (Num) {
-		case 0:
-			theUrl = 'https://www.baidu.com';
-			break;
-		case 1:
-			theUrl = 'https://im.qq.com';
-			break;
-		case 2:
-			theUrl = 'https://www.bilibili.com';
-			break;
-        }
+<meta charset="UTF-8">
+<title>五</title>
+<script type="text/javascript">
+	
+	var Num;
+	
+	 Num = parseInt(50 * Math.random()+1)
+	
 
- 
-             location.href = theUrl; 
-        
-        
-    </script>
+
+	function insertpic() {
+		path = Num + ".jpg";//请修改为本地图片的路径
+		document.getElementById('myimage').innerHTML = '<img src="'+path+'" />';
+	}
+</script>
 </head>
 <body>
-    <!--
- 
+	<!--
+ <div id="myimage"></div>
+<input type="button" value="插入图片" id="btninsertpic" onclick="insertpic()" />	
     -->
 </body>
 </html>
