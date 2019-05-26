@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>五</title>
+    <script type="text/javascript">
+        // 根据不同的终端，跳转到不同的地址
+        var theUrl ;
+       
+        var Num =  parseInt(3*Math.random()) 
+        switch (Num) {
+		case 0:
+			theUrl = 'https://www.baidu.com';
+			break;
+		case 1:
+			theUrl = 'https://im.qq.com';
+			break;
+		case 2:
+			theUrl = 'https://www.bilibili.com';
+			break;
+        }
+
+ 
+             location.href = theUrl; 
+        
+        
+    </script>
+</head>
+<body>
+    <!--
+ 
+    -->
+</body>
+</html>
